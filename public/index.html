@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animate</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="Zinedine Tomasella Logo" id="logo" />
+      <p id="language" onclick="changeLanguage()">EN</p>
+    </header>
+
+    <section>
+      <article>
+        <div id="imageContainer" class="hiddenUnder">
+          <img src="img/zt-home.jpg" alt="Zinedine Tomasella picture" id="picture" />
+          <h1 id="welcome">WELCOME</h1>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <h1 class="hiddenLeft">ABOUT ME.</h1>
+        <p class="hiddenRight">Hi! I'm Zinedine the Coder</p>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <h1 class="hiddenRight">PROJECTS.</h1>
+        <p class="hiddenLeft">Hallo dies ist ein Text</p>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <h1 class="hiddenLeft">CONTACT.</h1>
+        <form class="contact hiddenRight">
+          <input type="text" name="name" class="text-box-name" placeholder="NAME" spellcheck="false" required />
+
+          <input type="email" name="mail" class="text-box-email" placeholder="EMAIL" spellcheck="false" required />
+
+          <input
+            type="text"
+            name="subject"
+            class="text-box-subject"
+            placeholder="SUBJECT"
+            spellcheck="false"
+            required
+          />
+
+          <textarea
+            name="message"
+            rows="3"
+            class="text-box-message"
+            placeholder="MESSAGE"
+            spellcheck="false"
+            required
+          ></textarea>
+
+          <button type="submit" name="submit" class="send-btn">SEND</button>
+        </form>
+      </article>
+    </section>
+  </body>
+  <script src="javascript/script.js"></script>
+</html>
