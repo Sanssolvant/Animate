@@ -93,7 +93,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   background-color: #f8f8f8;
-  z-index: 1;
+  z-index: 999;
 }
 
 nav ul {
@@ -181,6 +181,7 @@ nav a:hover {
   bottom: 50px;
   right: 120px;
   text-shadow: 2px 1px 1px var(--backgroundBlack);
+  z-index: 999;
 }
 
 #home {
@@ -200,6 +201,10 @@ nav a:hover {
   background-color: #f8f8f8bd;
 }
 
+#aboutme-text {
+  text-shadow: 1px 1px 2px var(--backgroundBlack);
+}
+
 #grid-wrapper {
   position: absolute;
   height: 100%;
@@ -217,6 +222,25 @@ nav a:hover {
   display: grid;
   place-items: center;
   align-content: center;
+}
+
+#topLeft a,
+#bottomRight a,
+#bottomLeft a,
+#topRight a {
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--white);
+  padding: 5px;
+}
+
+#topLeft a:hover,
+#bottomRight a:hover,
+#bottomLeft a:hover,
+#topRight a:hover {
+  color: var(--backgroundLightBlue);
+  border: 2px solid var(--backgroundLightBlue);
+  font-style: italic;
 }
 
 #topLeft:hover,
